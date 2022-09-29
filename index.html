@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1>Inventory</h1>
+    <div id="commands">
+      <button onclick="selectAll()">Select All</button>
+      <button onclick="deSelectAll()">Deselect All</button>
+      <br />
+      <input id="input-item" onkeydown="getInputAndAddItem(event)" type="text"
+        placeholder="Aggiungi un elemento e premi invio..." />
+    </div>
+    <hr />
+    <div id="items">
+      <!-- <div class="item" onclick="selectItem(event)">Item 1</div>
+      <div class="item" onclick="selectItem(event)">Item 2</div>
+      <div class="item selected" onclick="selectItem(event)">Item 3</div>
+      <div class="item" onclick="selectItem(event)">Item 4</div>
+      <div class="item" onclick="selectItem(event)">Item 5</div>
+      <div class="item" onclick="selectItem(event)">Item 6</div> -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
